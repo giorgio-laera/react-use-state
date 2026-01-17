@@ -1,0 +1,19 @@
+
+.containerAcordion{
+  display: flex;
+  flex-direction: column;
+}
+.accordion{
+  min-height: 3rem;
+  
+}
+.accordion-title{
+  display: flex;
+}
+.accordion button{
+  background-color:cornflowerblue;
+  padding: 0.3rem;
+  border-color: blue;
+  border-radius: 15%;
+  
+}
