@@ -3,7 +3,7 @@ function AccordionBaseList(){
 
     return (
 
-        <div>
+        <div className='accordionContainer'>
         <AccordionBase title="HTML" content="HTML (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. Struttura il contenuto web e fornisce elementi di base come titoli, paragrafi e immagini."/>
         <AccordionBase title="CSS" content="CSS (Cascading Style Sheets) è un linguaggio di stile utilizzato per descrivere la presentazione di un documento scritto in HTML o XML. Controlla il layout, i colori, i caratteri e l'aspetto complessivo di una pagina web."/>
         <AccordionBase title="JavaScript" content="JavaScript è un linguaggio di programmazione dinamico utilizzato per lo sviluppo web, che consente contenuti interattivi come grafici animati, pulsanti cliccabili e altre funzionalità dinamiche sui siti web."/>
@@ -14,4 +14,4 @@ function AccordionBaseList(){
         </div>
     )
 }
-export default AccordionBaseList
+export default AccordionBaseList;

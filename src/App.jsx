@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './index.css'
-import AccordionBaseList from './components/base/AccordionBaseList'
+
+import AccordionBaseList from './components/base/AccordionBaseList.jsx'
+import AccordionArrey from './components/map/AccordionMap.jsx'
 
 function App() {
 
@@ -10,10 +12,10 @@ function App() {
 			
 			<h2>Esempio base</h2>
 				<AccordionBaseList/>
-			
-			<h2>Esempio sopra la base</h2>
+            <h2>esempio con map</h2>
+			<AccordionArrey/>
 		</div>
 	)
 }
 
-export default App
+export default App;
