@@ -3,45 +3,42 @@ import languages from "../../../public/lenguage"
 
 
 function AccordionArrey() {
-  const [selectLang, setSelectLang] = useState(0);
+  const [selectLang, setSelectLang] = useState('');
   const [isOpen, setIsOpen] = useState(false);
-console.log('selectLang e uguale a:',selectLang)
-  console.log(isOpen)
-function onElementCliccato(chi) {
+  
+  console.log('selectLang e uguale a:', selectLang)
+  console.log(isOpen);
+  
+
+  function onElementCliccato(chi) {
 
     console.log('cliccato', chi);
     setSelectLang(chi);
     console.log('chi e uguale a', chi)
 
     {
-      if (selectLang != chi) {
+      if (selectLang != chi || (isOpen == false && selectLang == chi)) {
         setIsOpen(true);
-      } else if(isOpen== false && selectLang==chi) {
-        setIsOpen(true);
-      }else{
+        
+      } else {
         setIsOpen(false);
-      }
-    }
 
-    
-    
+      }
+    //  {selectLang === chi ? setclasse(bgYellow) : setclasse(bgPrimary) }
+    }
   }
 
   return (<div className='accordion'>
     {languages.map((language, indice) =>
-      <button key={language.id} onClick={() => { onElementCliccato(indice) }}>{language.title}</button>
+      <button className={`language ${indice === selectLang ? 'bgYellow' : 'bgPrimary'}`} key={language.id} onClick={() => { onElementCliccato(indice) }}>{language.title}</button>
 
     )}
 
-    {/* {selectLang != x ? <div className='card'>
-      <h2>{languages[selectLang].title}</h2>
-      <p>{languages[selectLang].description}</p>
-    </div> :  <div className='card'><h2>Nessun elemento selezionato</h2></div>   } */}
 
     {isOpen ? <div className='card'>
       <h2>{languages[selectLang].title}</h2>
       <p>{languages[selectLang].description}</p>
-    </div> : <div className='card'><h2>Nessun linguaggio selezionato</h2></div>}
+    </div> : <div className='card '><h2>Nessun linguaggio selezionato</h2></div>}
   </div>
 
 

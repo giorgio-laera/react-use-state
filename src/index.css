@@ -27,11 +27,20 @@ text-align: center;
 
 
 .accordion button{
-  background-color:cornflowerblue;
+  
   padding: 0.3rem;
-  border-color: blue;
+  
   border-radius: 15%;
   margin-right: 1em;
   font-size: 1rem;
 }
-
+.bgPrimary{
+  background-color:cornflowerblue;
+border-color: blue;
+color: white;
+}
+.bgYellow{
+  background-color: rgb(255, 255, 0);
+  
+  border-color: rgb(115, 115, 7);
+}

@@ -9,11 +9,11 @@ function App() {
 	return (
 		<div>
 			<h1>Learn Web developer</h1>
-			
+
 			<h2>Esempio base</h2>
-				<AccordionBaseList/>
-            <h2>esempio con map</h2>
-			<AccordionArrey/>
+			<AccordionBaseList />
+			<h2>esempio con map</h2>
+			<AccordionArrey />
 		</div>
 	)
 }
